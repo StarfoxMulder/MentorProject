@@ -3,14 +3,14 @@
 <head>
 	
 	<title>The Mentor </title>
+
+	<link rel="stylesheet" href="assets/css/reset.css"></link> <!-- moved the reset to be read first -->
 	
-<link rel="stylesheet" href="assets/css/style.css"></link>
+	<link rel="stylesheet" href="assets/css/style.css"></link>
 	
 	<link rel="stylesheet" href="assets/css/Semantic-UI-CSS-master/semantic.css"></link>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="assets/css/reset.css"></link>
 
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 
@@ -75,7 +75,7 @@
 
 			<div class="row">
 			  <div class="col-sm-4">
-			    <a href="#" class="thumbnail" id="videos">
+			    <a class="thumbnail" id="videos">
 			      <img src="http://www.garethjmsaunders.co.uk/blueprint/placeholders/gif/extras/icons/256x256.gif" alt="..."><p>Videos</p>
 			    </a>
 			  </div>
@@ -96,9 +96,106 @@
 
 <!--API Info goes here!!-->
   	<div id="media">
- 	</div>
+  		<div class="row" id="videoContainer">
+		  	<div class="row" id="topVid">
+	  			<div class="ui centered card" id="topVidCard">
+				    <div class="content">
+				     <iframe id="player" type="text/html" width="560" height="340"
+				  src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+				  frameborder="0">
+				      </iframe>
+				      <h3>Title of video</h3>
+				    </div>
+				    <div class="extra content">
+				      <div class="description">
+				        Was this video useful for you?
+				      </div>
+				      <div class="ui two buttons">
+				        <div class="ui basic green button">Yes!</div>
+				        <div class="ui basic red button">Not Really...</div>
+				      </div>
+				    </div>
+	  			</div>
+	  		</div>
 
-</div>
+	  		<div class="row" id="bottomVids">
+	  			<div class="ui three column grid">
+
+				  <div class="column">
+				   <div class="ui fluid card">
+				    <div class="content">
+				     <div class="smallVid" id="0">
+				      <iframe id="player" type="text/html" width="187" height="113"
+				  src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+				  frameborder="0">
+				      </iframe>
+				      <h3>Title of video</h3>
+				     </div>
+				     <div class="extra content">
+				      <div class="description">
+				        Was this video useful for you?
+				      </div>
+				      <div class="ui two buttons">
+				        <div class="ui basic green button">Yes!</div>
+				        <div class="ui basic red button">Not Really...</div>
+				      </div>
+				    </div>
+				   </div>
+				  </div>
+	  			</div>
+
+				 <div class="column">
+				  <div class="ui fluid card">
+				   <div class="content">
+				    <div class="smallVid" id="1">
+				      <iframe id="player" type="text/html" width="187" height="113"
+				  src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+				  frameborder="0">
+				      </iframe>
+				      <h3>Title of video</h3>
+				    </div>
+				    <div class="extra content">
+				      <div class="description">
+				        Was this video useful for you?
+				      </div>
+				      <div class="ui two buttons">
+				        <div class="ui basic green button topVidButton">Yes!</div>
+				        <div class="ui basic red button topVidButton">Not Really...</div>
+				      </div>
+				    </div>
+				   </div>
+				  </div>
+				 </div>
+
+	  			 <div class="column">
+	  			  <div class="ui fluid card">
+				   <div class="content">
+				    <div class="smallVid" id="2">
+				      <iframe id="player" type="text/html" width="187" height="113"
+				  src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+				  frameborder="0">
+				      </iframe>
+				      <h3>Title of video</h3>
+				    </div>
+				    <div class="extra content">
+				      <div class="description">
+				        Was this video useful for you?
+				      </div>
+				      <div class="ui two buttons">
+				        <div class="ui basic green button">Yes!</div>
+				        <div class="ui basic red button">Not Really...</div>
+				      </div>
+				    </div>
+				   </div>
+				  </div>
+				 </div>
+
+		  		</div><!-- end 3 col grid -->
+		 	</div><!-- end bottom row -->
+		
+		</div><!-- end row containing previous two rows -->
+
+    </div><!-- end media container -->
 	
 
 <div id="page3">

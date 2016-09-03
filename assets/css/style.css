@@ -163,17 +163,46 @@ a {
 	margin: 0 auto;
 	margin-top: 100px;
 	width: 90%;
-	height:20%;
+	height: 70%;
 	background: ivory;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px grey;
-	text-align: center;	
 	opacity: .8;
 
 }
 
 #videos {
 
+}
+
+.card {
+	text-align: center;
+}
+
+#topVid {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#topVidCard {
+	width: 70%;
+}
+
+.topVidButton {
+	
+}
+
+#bottomVids {
+	width: 80%;
+	position: relative;
+}
+
+.smallVid {
+	display: inline-block;
+	position: relative;
+	width: 190px;
+	margin: 10px 7px;
 }
 
 #aricles {
