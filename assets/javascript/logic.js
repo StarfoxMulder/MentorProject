@@ -60,12 +60,14 @@ $("#menu").on("click", function(){
 	$('body').on('click', '#videos', function() {
 		console.log("video click event listener is working");
 
-		if ($("#media").attr("height") == "20%") {
-			$("#media").attr("height", "70%");
-			$("#videoContainer").attr("display", "block");
-		} else if ($("#media").attr("height") == "70%") {
-			$("#media").attr("height", "20%");
-			$("#videoContainer").attr("display", "none");
+		if (document.getElementById('media').style.height == '20%') {
+			document.getElementById('media').style.height = '80%';
+			document.getElementById('videoContainer').style.display = 'block'; 
+			console.log("Amazing what you'll find");
+		} else {
+			document.getElementById('media').style.height = '20%';
+			document.getElementById('videoContainer').style.display = 'none'; 
+			console.log("face to face");
 		}
 	});
 

@@ -99,9 +99,9 @@ a {
 #page2 {
 	background: url("http://mirthmarfa.com/wp-content/uploads/2013/02/background.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-attachment: fixed;
-	height: 100%;
+	height: fill;
 	min-height: 1000px;
 
 }
@@ -162,8 +162,10 @@ a {
 	
 	margin: 0 auto;
 	margin-top: 100px;
+	margin-bottom: 20px;
+	padding-bottom: 25px;
 	width: 90%;
-	height: 70%;
+	height: 20%;
 	background: ivory;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px grey;
@@ -175,8 +177,17 @@ a {
 
 }
 
+#videoContainer {
+	display: none;
+	transition: display 0.3s ease;
+}
+
 .card {
 	text-align: center;
+}
+
+.vidTitle {
+	font-size: 16px;
 }
 
 #topVid {
@@ -189,13 +200,20 @@ a {
 	width: 70%;
 }
 
+#topVidCard .button {
+	width: 25%;
+	margin: 7px 30px;
+}
+
 .topVidButton {
-	
+
 }
 
 #bottomVids {
 	width: 80%;
 	position: relative;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 .smallVid {
